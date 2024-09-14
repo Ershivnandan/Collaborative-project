@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+html, body {
+    height: 100%;
+    width:100%;
+}
+
+
+body {
+  margin: 0;
+  width: 100vw;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 1em;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container{
+    display: flex;
+    width: 90vw;
+    margin:0 auto;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+img{
+    max-width: 300px;
+    max-height: 400px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+.product-details{
+    margin:1em;
+    font-size: clamp(12px, 2vw, 18px); 
+    font-weight:500;
+}
+
+.category{
+    font-size: clamp(8px, 1.5vw, 12px);
+}
+
+.wishlist{
+    position: absolute;
+    top: 1%;
+    right:1%;
+    
+    
+}
+
+.wishlist img{
+    transform: scale(1.5);
+}
+
+.new-tag{
+    display: inline;
+    font-size:small;
+    width: 100px;
+    padding: 5px 10px;
+    position: absolute;
+    top:2%;
+    left: 1%;
+    white-space: nowrap;
+    border-radius: 5px;
+    background-image: linear-gradient(285deg, rgb(46, 164, 224), rgb(49, 198, 132));
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 600px) {
+    .wishlist img{
+        transform: scale(1);
+    }  
+
+    
+}

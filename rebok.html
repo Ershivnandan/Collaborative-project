@@ -13,104 +13,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      .main_div {
-        margin: 20px 40px 0 40px;
-        padding: 10px;
-      }
-
-      .product-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-        margin: 0 auto;
-      }
-
-      .product-card {
-        border-radius: 2px;
-        background-color: #ffffff;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .gradient-box {
-        background: linear-gradient(to right, #38ef7d, #11998e);
-        color: white;
-        font-size: small;
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        padding: 5px;
-        z-index: 1;
-      }
-
-      .fa-heart {
-        position: absolute;
-        top: 20px;
-        right: 10px;
-        z-index: 1;
-        color: #000;
-      }
-
-      .product-image {
-        height: 500px;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 2px;
-      }
-
-      .product-title {
-        text-transform: uppercase;
-        font-size: small;
-        font-weight: 500;
-        color: #1a1919;
-        margin-top: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-right: 7px;
-
-      }
-
-      .product-price {
-        font-weight: 600;
-        color: #0c0c0c;
-        margin-top: 5px;
-
-      }
-
-      /* Responsive design adjustments */
-      @media (max-width: 768px) {
-        .product-grid {
-          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        }
-
-        .product-image {
-          height: 300px;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .product-card {
-          padding: 15px;
-        }
-
-        .product-title {
-          font-size: 0.9rem;
-        }
-
-        .product-price {
-          font-size: 1rem;
-        }
-      }
-    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css">
+    
   </head>
   <body>
       <header>
@@ -167,6 +75,60 @@
       </nav>
       
     </header>
-    
+    <main class="container">
+      <div class="cards">
+        <div class="card">
+          <p class="new-tag">I AM THE NEW</p>
+          <span class="wishlist">
+            <img src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/wishlist_icon_black.svg" alt="">
+          </span>
+          <img src="https://imagescdn.reebok.in/img/app/product/3/39710886-14664738.jpg?auto=format&w=390" alt="Shoe">
+          <div class="product-details">
+            <p class="category">TRAINING SHOES</p>
+            <p class="product-name">Reebok Men NFX Trainer</p>
+            <h5>5,999</h5>
+          </div>
+        </div>
+        <div class="card">
+          <p class="new-tag">I AM THE NEW</p>
+          <span class="wishlist">
+            <img src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/wishlist_icon_black.svg" alt="">
+          </span>
+          <img src="https://imagescdn.reebok.in/img/app/product/3/39710887-14664746.jpg?auto=format&w=390" alt="Shoe">
+          <div class="product-details">
+            <p class="category">CLASSIC SHOES</p>
+            <p class="product-name">Reebok Men Club Shoes</p>
+            <h5>6,999</h5>
+          </div>
+          
+        </div>
+        <div class="card">
+          <p class="new-tag">I AM THE NEW</p>
+          <span class="wishlist">
+            <img src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/wishlist_icon_black.svg" alt="">
+          </span>
+          <img src="https://imagescdn.reebok.in/img/app/product/3/39681167-13866682.jpg?auto=format&w=390" alt="">
+          <div class="product-details">
+            <p class="category">RUNNING SHOES</p>
+            <p class="product-name">Reebok Women Energen Plus 2</p>
+            <h5>4,999</h5>
+          </div>
+        
+        </div>
+        <div class="card">
+          <p class="new-tag">I AM THE NEW</p>
+          <span class="wishlist">
+            <img src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/wishlist_icon_black.svg" alt="">
+          </span>
+          <img src="https://imagescdn.reebok.in/img/app/product/3/39681821-13881755.jpg?auto=format&w=390" alt="">
+          <div class="product-details">
+            <p class="category">CLASSIC SHOES</p>
+            <p class="product-name">Reebok Women Classic Shoe</p>
+            <h5>6,999</h5>
+          </div>
+        
+        </div>
+      </div>
+    </main>
   </body>
 </html>
